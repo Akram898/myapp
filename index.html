@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--Css Coming From Sass-->
+
+    <link rel="stylesheet/scss" type="text/scss" href="sass/style.scss" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="icon" href="img/logo-blue.png" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"
+    />
+
+    <!--BootStrap 4 Css-->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <!--AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!--Font Awesome-->
+    <script
+      src="https://kit.fontawesome.com/d44b24acad.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>My App</title>
+  </head>
+
+  <body data-spy="scroll" data-target="#navbarResponsive">
+    <section id="home">
+      <!-- <nav class="navbar navbar-expand-md fixed-top py-3">
+        <a href="#" class="navbar-brand text-uppercase font-weight-bold"
+          ><img id="logo-img" src="img/logo.png" alt=""
+        /></a>
+        <button
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          class="navbar-toggler navbar-toggler-right"
+        >
+          <i class="fa fa-bars" style="color: white;"></i>
+        </button>
+
+        <div id="navbarResponsive" class="collapse navbar-collapse">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a href="#home" class="nav-link text-uppercase">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#portfolio" class="nav-link text-uppercase">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a href="#services-section" class="nav-link text-uppercase"
+                >Services</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link text-uppercase">About</a>
+            </li>
+            <li class="nav-item">
+              <a
+                id="contact-box"
+                href="#contact"
+                class="nav-link text-uppercase"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav> -->
+
+      <!--***********************************Start BAnner Section*******************************************************-->
+      <div class="container-fluid img-contain p-0">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand" href="#"
+            ><img id="logo-img" src="img/logo.png" alt=""
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#"
+                  >Home <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  id="contact-box"
+                  href="#contact"
+                  class="nav-link text-uppercase"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <div class="row site-content justify-center">
+          <div class="col-md-8">
+            <p class="site-desc ml-1">
+              Welcome to the app
+            </p>
+
+            <h1 class="site-title">
+              Show Case your Amazing App
+            </h1>
+
+            <div class="app-buttons text-center">
+              <a class="btn btn-android btn-outline-light btn-lg" href="#"
+                ><i class="fab fa-google-play"></i> Google Play</a
+              >
+              <a class="btn btn-apple btn-outline-light btn-lg" href="#"
+                ><i class="fab fa-apple"></i> App Store</a
+              >
+            </div>
+          </div>
+          <div class="col-md-4">
+            <img class="img-mobile" src="img/mob2.png" alt="gif" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--***********************************Start Services Section*******************************************************-->
+
+    <section id="site-services">
+      <div class="container-fluid text-center">
+        <h1 id="line">
+          Overview about the app
+        </h1>
+        <h2>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum,
+          maxime!
+        </h2>
+        <div class="row">
+          <div class="card-deck">
+            <div class="col-md-4 my-2">
+              <div class="card" data-aos="fade-right">
+                <i class="fas fa-pen-nib card-img"></i>
+                <div class="card-body">
+                  <h5 class="card-title">Custom Design</h5>
+                  <p class="card-text">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Distinctio, nesciunt?
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 my-2">
+              <div class="card" data-aos="fade-down">
+                <i class="fas fa-rocket card-img"></i>
+                <div class="card-body">
+                  <h5 class="card-title">Fast</h5>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Officiis, aspernatur?
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 my-2">
+              <div class="card" data-aos="fade-left">
+                <i class="fas fa-lock card-img"></i>
+                <div class="card-body">
+                  <h5 class="card-title">Secure</h5>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Amet, animi.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--***********************************End Services Section*******************************************************-->
+
+    <!--***********************************Start Features Section*******************************************************-->
+
+    <section id="features-section" class="offset">
+      <div class="container-fluid shadow-bg">
+        <h1 class="text-center">Advanced Features</h1>
+        <p class="text-center">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non,
+          delectus excepturi.
+        </p>
+        <div class="row">
+          <div
+            class="col-md-4 text-right"
+            data-aos="zoom-in"
+            data-aos-duration="1500"
+          >
+            <div class="row">
+              <div class="col-md-6">
+                <i class="fas fa-calendar-check"></i>
+              </div>
+              <div class="col-md-6 feature-style">
+                <h5 class="text-left feature-heading">Feature</h5>
+                <p class="feature-para text-left">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Libero, dolorum animi.
+                </p>
+              </div>
+            </div>
+            <br />
+            <div class="row">
+              <div class="col-md-6">
+                <i class="fas fa-sms"></i>
+              </div>
+              <div class="col-md-6 feature-style">
+                <h5 class="text-left feature-heading">Feature</h5>
+                <p class="feature-para text-left">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Libero, dolorum animi.
+                </p>
+              </div>
+            </div>
+            <br />
+            <div class="row">
+              <div class="col-md-6">
+                <i class="fas fa-calendar-check"></i>
+              </div>
+              <div class="col-md-6 feature-style">
+                <h5 class="text-left feature-heading">Feature</h5>
+                <p class="feature-para text-left">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Libero, dolorum animi.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 text-center center-img">
+            <img
+              class="img-services"
+              src="img/mob-features.png"
+              alt="Web-Design"
+            />
+          </div>
+
+          <div class="col-md-4">
+            <div class="row">
+              <div class="col-md-6 feature-style">
+                <h5 class="text-right feature-heading">Feature</h5>
+                <p class="feature-para text-right">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Libero, dolorum animi.
+                </p>
+              </div>
+              <div class="col-md-6">
+                <i class="fas fa-sms"></i>
+              </div>
+            </div>
+            <br />
+            <div class="row">
+              <div class="col-md-6 feature-style">
+                <h5 class="text-right feature-heading">Feature</h5>
+                <p class="feature-para text-right">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Libero, dolorum animi.
+                </p>
+              </div>
+              <div class="col-md-6">
+                <i class="fas fa-calendar-check"></i>
+              </div>
+            </div>
+
+            <br />
+            <div class="row">
+              <div class="col-md-6 feature-style">
+                <h5 class="text-right feature-heading">Feature</h5>
+                <p class="feature-para text-right">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Libero, dolorum animi.
+                </p>
+              </div>
+              <div class="col-md-6" id="last-item">
+                <i class="fas fa-calendar-check"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--***********************************End Features*******************************************************-->
+
+    <!--***********************************Start Prices*******************************************************-->
+    <section id="prices">
+      <div class="container-fluid text-center">
+        <h1>PRICES</h1>
+        <p id="prices-para">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati,
+          earum.
+        </p>
+        <div class="row">
+          <div class="col-md-4 my-4">
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th class="first-th">
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <h2>Free <span> / offer today</span></h2>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="gray">feature</td>
+                </tr>
+                <tr>
+                  <td class="light-gray">App</td>
+                </tr>
+                <tr>
+                  <td class="gray">feature</td>
+                </tr>
+                <tr>
+                  <td class="light-gray">New</td>
+                </tr>
+                <tr>
+                  <td class="gray">
+                    <a href="#" class="btn first-table-btn">Go somewhere</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="col-md-4 my-4">
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th id="second-th">
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <h2>$ 20 <span> / Per Month</span></h2>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="gray">feature</td>
+                </tr>
+                <tr>
+                  <td class="light-gray">New</td>
+                </tr>
+                <tr>
+                  <td class="gray">feature</td>
+                </tr>
+                <tr>
+                  <td class="light-gray">New</td>
+                </tr>
+                <tr>
+                  <td class="gray">
+                    <a href="#" class="btn second-table-btn">Go somewhere</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="col-md-4 my-4">
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th class="first-th">
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <h2>$ 60 <span> / Per Year</span></h2>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="gray">feature</td>
+                </tr>
+                <tr>
+                  <td class="light-gray">New</td>
+                </tr>
+                <tr>
+                  <td class="gray">feature</td>
+                </tr>
+                <tr>
+                  <td class="light-gray">App</td>
+                </tr>
+                <tr>
+                  <td class="gray">
+                    <a href="#" class="btn first-table-btn">Go somewhere</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--***********************************End Prices*******************************************************-->
+
+    <!--***********************************Start Testimonial*******************************************************-->
+    <section id="testimonial-section">
+      <div class="container-fluid text-center">
+        <h1>What our Clients Say</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni,
+          provident!
+        </p>
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-ride="carousel"
+        >
+          <ol class="carousel-indicators">
+            <li
+              data-target="#carouselExampleIndicators"
+              data-slide-to="0"
+              class="active"
+            ></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="card text-center">
+                <img
+                  class="card-img-top"
+                  src="img/STEPHANIE_WILLIAMS.jpg"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card text-center">
+                <img
+                  class="card-img-top"
+                  src="img/STEPHANIE_WILLIAMS.jpg"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card text-center">
+                <img
+                  class="card-img-top"
+                  src="img/STEPHANIE_WILLIAMS.jpg"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a
+            class="carousel-control-prev"
+            href="#carouselExampleIndicators"
+            role="button"
+            data-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#carouselExampleIndicators"
+            role="button"
+            data-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!--***********************************End Testimonial*******************************************************-->
+
+    <!--***********************************Start Ask Question*******************************************************-->
+    <section id="ask">
+      <div class="container-fluid text-center">
+        <h1>
+          Free ask questions
+        </h1>
+        <p class="ask-desc">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum rerum
+          alias perferendis culpa provident!
+        </p>
+        <div class="row">
+          <div class="col-md-6 text-center mb-5">
+            <img src="img/mob.png" alt="" />
+          </div>
+          <div class="col-md-6 text-left ask-col">
+            <h5>
+              Lorem ipsum dolor sit amet ?
+            </h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo,
+              reprehenderit.
+            </p>
+            <hr />
+
+            <h5>
+              Lorem ipsum dolor sit amet ?
+            </h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo,
+              reprehenderit.
+            </p>
+            <hr />
+
+            <h5>
+              Lorem ipsum dolor sit amet ?
+            </h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo,
+              reprehenderit.
+            </p>
+            <hr />
+
+            <h5>
+              Lorem ipsum dolor sit amet ?
+            </h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo,
+              reprehenderit.
+            </p>
+            <hr />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--***********************************End Ask Question*******************************************************-->
+
+    <!--***********************************Start Contact Form*******************************************************-->
+    <section id="contact-Form">
+      <div class="container-fluid text-center">
+        <h1>
+          looking for support
+        </h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum rerum
+          alias perferendis culpa provident!
+        </p>
+        <div class="row">
+          <div class="col-md-6">
+            <form class="mx-5">
+              <div class="form-group">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="E-mail"
+                />
+              </div>
+              <div class="form-group">
+                <input class="form-control" type="text" placeholder="Info" />
+              </div>
+              <div class="form-group">
+                <select class="form-control">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <textarea
+                  class="form-control"
+                  id="textArea1"
+                  placeholder="Write your Message.... "
+                  rows="4"
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-contact-form">
+                Send
+              </button>
+            </form>
+          </div>
+
+          <div class="col-md-6 map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d110502.60389525369!2d31.188423431598185!3d30.05961847053272!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14583fa60b21beeb%3A0x79dfb296e8423bba!2sCairo%2C%20Cairo%20Governorate%2C%20Egypt!5e0!3m2!1sen!2sae!4v1593428544227!5m2!1sen!2sae"
+              width="400"
+              height="300"
+              frameborder="0"
+              style="border: 0;"
+              allowfullscreen=""
+              aria-hidden="false"
+              tabindex="0"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--***********************************End Contact Form*******************************************************-->
+
+    <!--***********************************Start Footer*******************************************************-->
+    <footer>
+      <div class="container-fluid text-center">
+        <div class="row">
+          <div class="col-md-4"><h6>&copy; copyrights Akram2020</h6></div>
+          <div class="col-md-4">
+            <a href="https://github.com/Akram898" target="_blank"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+          </div>
+          <div class="col-md-4">
+            <h6>My App Inc.</h6>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--***********************************End Footer*******************************************************-->
+
+    <!-- partial -->
+
+    <!--JavaScrip Main-->
+    <script src="js/main.js"></script>
+
+    <!--BootStrap 4 JavaScrip-->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="/__/firebase/7.14.3/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="/__/firebase/7.14.3/firebase-analytics.js"></script>
+
+    <!-- Initialize Firebase -->
+    <script src="/__/firebase/init.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

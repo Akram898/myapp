@@ -1,0 +1,479 @@
+@import "config";
+
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700&display=swap");
+
+//font-family: 'Libre Franklin', sans-serif;
+$primary-color: #7986cb;
+$primary-color-light: #aab6fe;
+$primary-color-dark: #49599a;
+$secondary-color: #333333;
+$bootstrap-color: #007bff;
+
+html {
+  scroll-behavior: smooth;
+  font-family: "Libre Franklin", sans-serif;
+  width: 100%;
+
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Lato", sans-serif;
+  color: #505962;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*---------- Navigation---------------*/
+
+//-----------Start NavBar-------------------------------------
+#home {
+  nav {
+    background-color: rgba($primary-color-dark, 0.9) !important;
+    padding: 2% 14%;
+    .navbar-brand {
+      img {
+        width: 35vh;
+      }
+    }
+
+    li {
+      padding-left: 1.4vh;
+    }
+    .nav-item a {
+      color: white;
+      font-size: 2.7vh;
+      text-transform: uppercase;
+
+      &:hover {
+        border-bottom: 1px solid white;
+        padding-bottom: 0.5vh;
+        transition: ease 0.7s;
+      }
+    }
+
+    #contact-box {
+      border: 1px solid #fff;
+      background-color: #fff;
+      color: $primary-color;
+      border-radius: 0.2vh;
+
+      &:hover {
+        background-color: $primary-color-dark;
+        color: #fff;
+        border: 0.1vh solid $primary-color-dark;
+      }
+    }
+  }
+  //-----------End NavBar-------------------------------------
+
+  //-----------Banner-------------------------------------
+
+  .img-contain {
+    background: url(../img/computer.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    overflow-x: hidden;
+  }
+
+  .site-content {
+    background: rgba($primary-color-dark, 0.9);
+    margin: 0;
+    .site-desc {
+      color: #fff;
+      font-size: 3vh;
+      text-transform: uppercase;
+      letter-spacing: 5;
+      text-shadow: 0.1vh 0.1vh 0.7vh black;
+      text-align: center;
+      margin-top: 15%;
+      margin-bottom: 1%;
+    }
+    .site-title {
+      font-size: 6vh;
+      padding: 5vh;
+      text-transform: uppercase;
+      line-height: 5vh;
+      color: #fff;
+      margin-bottom: 4%;
+      text-align: center;
+      font-weight: 700;
+      letter-spacing: 0.1vh;
+      text-shadow: 0.4vh 0.4vh 0.9vh black;
+    }
+
+    .app-buttons {
+      margin-bottom: 15%;
+    }
+    .btn-android {
+      margin-left: 15vh;
+      background-color: white;
+      color: black;
+      &:hover {
+        background-color: $primary-color-light;
+        color: white;
+      }
+    }
+
+    .btn-apple {
+      background-color: $primary-color;
+      margin-left: 7vh;
+    }
+  }
+  .img-mobile {
+    width: 40%;
+    margin-top: 22%;
+    margin-bottom: 45%;
+  }
+
+  clip-path: polygon(
+    51% 0,
+    100% 0,
+    100% 35%,
+    100% 100%,
+    77% 91%,
+    49% 88%,
+    23% 91%,
+    0 100%,
+    0 0,
+    25% 0
+  );
+
+  // clip-path: polygon(
+  //   50% 0%,
+  //   83% 0,
+  //   100% 0,
+  //   100% 70%,
+  //   100% 100%,
+  //   48% 92%,
+  //   0 100%,
+  //   0 70%,
+  //   0 0,
+  //   20% 0
+  // );
+}
+
+//===============End Banner-----------------------------
+
+//===============End Home Section-----------------------------
+
+// ----------------------Start Services Section-----------------------------
+#site-services {
+  padding: 5%;
+  a {
+    color: $secondary-color;
+  }
+  h1 {
+    padding: 3% 0 1% 0;
+    font-size: 5.4vh;
+    font-weight: 50%;
+    text-shadow: 0.1vh 0.1vh 0.4vh;
+    text-transform: uppercase;
+  }
+  h2 {
+    padding: 0 0 5% 0;
+    font-size: 3vh;
+    color: rgb(170, 150, 150);
+  }
+  .card {
+    padding: 2% 2%;
+    box-shadow: 0.3vh 0.3vh 0.9vh;
+    border-radius: 3vh;
+
+    .card-img {
+      font-size: 38px;
+      color: $primary-color;
+      margin: 1% 0 0 0;
+    }
+
+    h5 {
+      padding: 5% 0 2% 0;
+      font-size: 27px;
+    }
+    p {
+      font-weight: 450;
+      font-size: 20px;
+    }
+    &:hover {
+      background-color: $primary-color-light;
+      transition: ease 0.4s;
+      h5 {
+        color: white;
+      }
+      p {
+        color: white;
+      }
+    }
+  }
+}
+// ----------------------End Services Page-----------------------------
+
+// ----------------------Start Features Page-----------------------------
+#features-section {
+  background-image: url("../img/computers.png");
+
+  clip-path: polygon(
+    51% 5%,
+    73% 5%,
+    100% 0,
+    100% 100%,
+    77% 95%,
+    50% 93%,
+    27% 95%,
+    0 100%,
+    0 0,
+    27% 5%
+  );
+  .shadow-bg {
+    background: rgba($primary-color-dark, 0.8);
+    margin: 0;
+  }
+  h1 {
+    font-size: 5.4vh;
+    padding: 15% 0 1% 0;
+    color: white;
+    text-shadow: 0.1vh 0.1vh 0.7vh black;
+    text-transform: uppercase;
+  }
+  p {
+    padding: 0 0 7% 0;
+    color: white;
+    text-shadow: 0.1vh 0.1vh 0.7vh black;
+  }
+  i {
+    color: white;
+    font-size: 9vh;
+  }
+  .feature-style {
+    h5 {
+      color: white;
+      font-size: 2.8vh;
+    }
+    p {
+      font-size: 1.7vh;
+      padding: 0 !important;
+    }
+  }
+  .center-img {
+    padding-bottom: 15%;
+
+    img {
+      width: 70%;
+    }
+  }
+  #last-item {
+    padding-bottom: 25%;
+  }
+}
+// ----------------------End Features Page-----------------------------
+
+// ----------------------Start Prices Section-----------------------------
+#prices {
+  margin: 1% 8% 4% 8%;
+  h1 {
+    padding: 4% 0 1% 0;
+    font-size: 5.4vh;
+    font-weight: 50%;
+    text-shadow: 0.1vh 0.1vh 0.4vh;
+    text-transform: uppercase;
+  }
+  #prices-para {
+    padding: 0 0 2% 0;
+    color: rgb(131, 127, 122);
+    font-weight: 50%;
+    text-shadow: 0.1vh 0.1vh 0.4vh;
+  }
+  table {
+    .first-th {
+      background-color: #9aa0a5;
+      color: white;
+      p {
+        font-size: 3vh;
+      }
+      span {
+        font-size: 3vh;
+      }
+    }
+    .gray {
+      background-color: #f7f7f7;
+    }
+    .light-gray {
+      background-color: #e0dede;
+    }
+    .first-table-btn {
+      border: 1px solid black;
+      &:hover {
+        background-color: white;
+      }
+    }
+
+    #second-th {
+      background-color: $primary-color-dark;
+      color: white;
+      p {
+        font-size: 3vh;
+      }
+      span {
+        font-size: 3vh;
+      }
+    }
+    .second-table-btn {
+      background-color: $primary-color-dark;
+      border: 1px solid $primary-color-dark;
+      color: white;
+      &:hover {
+        background-color: white;
+        color: black;
+      }
+    }
+  }
+}
+// ----------------------End Section-----------------------------
+
+// ----------------------Start Testimonial Section----------------------------
+#testimonial-section {
+  padding: 15%;
+  background-color: $primary-color-dark;
+  clip-path: polygon(
+    51% 9%,
+    74% 8%,
+    100% 0,
+    100% 100%,
+    77% 91%,
+    49% 88%,
+    23% 91%,
+    0 100%,
+    0 0,
+    24% 8%
+  );
+  h1 {
+    padding: 3% 0 1% 0;
+    font-size: 5.4vh;
+    font-weight: 50%;
+    text-shadow: 0.1vh 0.1vh 0.4vh #333333;
+    text-transform: uppercase;
+    color: white;
+  }
+
+  p {
+    padding: 0 0 3% 0;
+    color: rgb(131, 127, 122);
+    font-weight: 50%;
+    text-shadow: 0.1vh 0.1vh 0.4vh #333333;
+    color: white;
+  }
+  .card {
+    margin: 9%;
+    img {
+      width: 15vh;
+      border-radius: 50%;
+      margin-left: 45%;
+      padding: 5% 0 0 0;
+    }
+    .card-text {
+      padding: 1% 0 9% 0;
+      color: $secondary-color;
+    }
+  }
+}
+// ----------------------End Testimonial Section-----------------------------
+
+// ----------------------Start Ask Section-----------------------------
+#ask {
+  padding: 5%;
+  img {
+    width: 50%;
+  }
+  h1 {
+    padding: 3% 0 1% 0;
+    font-size: 5.4vh;
+    font-weight: 50%;
+    text-shadow: 0.1vh 0.1vh 0.4vh;
+    text-transform: uppercase;
+  }
+
+  .ask-desc {
+    padding: 0 0 3% 0;
+    color: rgb(131, 127, 122);
+    font-weight: 50%;
+    text-shadow: 0.1vh 0.1vh 0.4vh;
+  }
+  .ask-col {
+    p {
+      color: rgb(131, 127, 122);
+    }
+  }
+}
+
+// ----------------------End Ask Section-----------------------------
+
+// ----------------------Start Contact Section-----------------------------
+#contact-Form {
+  padding: 9% 6%;
+  background-color: $primary-color-dark;
+  clip-path: polygon(
+    51% 9%,
+    74% 8%,
+    100% 0,
+    100% 100%,
+    77% 100%,
+    50% 100%,
+    24% 100%,
+    0 100%,
+    0 0,
+    24% 8%
+  );
+  h1 {
+    padding: 3% 0 1% 0;
+    font-size: 5.4vh;
+    font-weight: 50%;
+    text-shadow: 0.1vh 0.1vh 0.4vh #333333;
+    text-transform: uppercase;
+    color: white;
+  }
+
+  p {
+    padding: 0 0 3% 0;
+    color: rgb(131, 127, 122);
+    font-weight: 50%;
+    text-shadow: 0.1vh 0.1vh 0.4vh #333333;
+    color: white;
+  }
+  form {
+    padding: 0 0 4% 0;
+  }
+  .btn-contact-form {
+    border: 0.1vh solid white;
+    width: 100%;
+    color: white;
+    &:hover {
+      background-color: $primary-color;
+    }
+  }
+}
+
+// ----------------------End Contact Section-----------------------------
+
+footer {
+  padding: 1% 0;
+  background-color: $primary-color;
+  color: white;
+  i {
+    font-size: 4vh;
+    color: white;
+    padding: 0 1vh;
+    &:hover {
+      color: #49599a;
+    }
+  }
+}
+
+@import "_mobile";
