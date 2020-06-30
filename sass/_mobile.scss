@@ -15,19 +15,19 @@
     .site-title {
       font-size: 8vh !important;
     }
-    .btn-android {
-      margin-left: 1vh !important;
-      width: 150vh;
-    }
+
     .app-buttons {
       display: grid;
       grid-gap: 2.2vh;
       grid-template-columns: 1fr;
       padding: 5%;
     }
+    .btn-android {
+      width: 100% !important;
+    }
     .btn-apple {
-      width: 150vh;
-      margin-left: 1vh !important;
+      width: 100% !important;
+      margin-left: 4vh !important;
     }
     .img-mobile {
       width: 60%;
@@ -126,11 +126,11 @@
       font-size: 5vh !important;
     }
     .btn-android {
+      width: 100% !important;
       margin-left: 0 !important;
-      width: 46vh;
     }
     .btn-apple {
-      width: 46vh;
+      width: 100% !important;
       margin-left: 0 !important;
     }
   }
