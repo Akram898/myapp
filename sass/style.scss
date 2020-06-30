@@ -28,7 +28,7 @@ body {
 //-----------Start NavBar-------------------------------------
 #home {
   nav {
-    background-color: rgba($primary-color-dark, 0.8) !important;
+    background-color: rgba($primary-color-dark, 0.9) !important;
     padding: 2% 14%;
     .navbar-brand {
       img {
@@ -70,7 +70,7 @@ body {
   //-----------Banner-------------------------------------
 
   .img-contain {
-    background: url(../img/ipad.jpg);
+    background: url(../img/world.jpg);
     background-attachment: fixed;
     background-size: cover;
     background-position: right;
@@ -78,7 +78,7 @@ body {
   }
 
   .site-content {
-    background: rgba($primary-color-dark, 0.8);
+    background: rgba($primary-color-dark, 0.9);
     margin: 0;
     .site-desc {
       color: #fff;
