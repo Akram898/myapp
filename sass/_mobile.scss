@@ -4,7 +4,6 @@
 
 //***************Desktops & Laptops******************
 @include mediaLg {
-  // grid-template-columns: repeat(3, 1fr);
 }
 
 //*****************TABLETS*********************
@@ -43,6 +42,19 @@
     }
     h2 {
       padding: 0 0 15% 0;
+    }
+
+    .card {
+      .card-img {
+        font-size: 8vh;
+      }
+
+      h5 {
+        font-size: 5vh;
+      }
+      p {
+        font-size: 3vh;
+      }
     }
   }
 
@@ -126,6 +138,19 @@
     h1 {
       font-size: 6vh;
     }
+
+    .card {
+      .card-img {
+        font-size: 6vh;
+      }
+
+      h5 {
+        font-size: 3.5vh;
+      }
+      p {
+        font-size: 2.2vh;
+      }
+    }
   }
 
   #features-section {
@@ -159,6 +184,19 @@
   #prices {
     h1 {
       font-size: 7vh;
+    }
+    table {
+      .first-th {
+        p {
+          font-size: 2vh;
+        }
+      }
+
+      #second-th {
+        p {
+          font-size: 2vh;
+        }
+      }
     }
   }
   #contact-Form {

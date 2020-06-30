@@ -1,14 +1,5 @@
 @import "config";
 
-@import url("https://fonts.googleapis.com/css?family=Lato:400,700&display=swap");
-
-//font-family: 'Libre Franklin', sans-serif;
-$primary-color: #7986cb;
-$primary-color-light: #aab6fe;
-$primary-color-dark: #49599a;
-$secondary-color: #333333;
-$bootstrap-color: #007bff;
-
 html {
   scroll-behavior: smooth;
   font-family: "Libre Franklin", sans-serif;
@@ -37,7 +28,7 @@ body {
 //-----------Start NavBar-------------------------------------
 #home {
   nav {
-    background-color: rgba($primary-color-dark, 0.9) !important;
+    background-color: rgba($primary-color-dark, 0.8) !important;
     padding: 2% 14%;
     .navbar-brand {
       img {
@@ -53,15 +44,16 @@ body {
       font-size: 2.7vh;
       text-transform: uppercase;
 
-      &:hover {
-        border-bottom: 1px solid white;
+      &:hover,
+      &:active {
+        border-bottom: 0.2vh solid white;
         padding-bottom: 0.5vh;
         transition: ease 0.7s;
       }
     }
 
     #contact-box {
-      border: 1px solid #fff;
+      border: 0.2vh solid #fff;
       background-color: #fff;
       color: $primary-color;
       border-radius: 0.2vh;
@@ -78,14 +70,15 @@ body {
   //-----------Banner-------------------------------------
 
   .img-contain {
-    background: url(../img/computer.jpg);
+    background: url(../img/ipad.jpg);
     background-attachment: fixed;
     background-size: cover;
+    background-position: right;
     overflow-x: hidden;
   }
 
   .site-content {
-    background: rgba($primary-color-dark, 0.9);
+    background: rgba($primary-color-dark, 0.8);
     margin: 0;
     .site-desc {
       color: #fff;
@@ -146,19 +139,6 @@ body {
     0 0,
     25% 0
   );
-
-  // clip-path: polygon(
-  //   50% 0%,
-  //   83% 0,
-  //   100% 0,
-  //   100% 70%,
-  //   100% 100%,
-  //   48% 92%,
-  //   0 100%,
-  //   0 70%,
-  //   0 0,
-  //   20% 0
-  // );
 }
 
 //===============End Banner-----------------------------
@@ -184,23 +164,25 @@ body {
     color: rgb(170, 150, 150);
   }
   .card {
-    padding: 2% 2%;
+    padding: 4% 4% 14% 4%;
+
     box-shadow: 0.3vh 0.3vh 0.9vh;
     border-radius: 3vh;
+    cursor: pointer;
 
     .card-img {
-      font-size: 38px;
+      font-size: 6vh;
       color: $primary-color;
       margin: 1% 0 0 0;
     }
 
     h5 {
-      padding: 5% 0 2% 0;
-      font-size: 27px;
+      padding: 2% 0 2% 0;
+      font-size: 3.7vh;
     }
     p {
       font-weight: 450;
-      font-size: 20px;
+      font-size: 2.5vh;
     }
     &:hover {
       background-color: $primary-color-light;
@@ -214,9 +196,9 @@ body {
     }
   }
 }
-// ----------------------End Services Page-----------------------------
+// ----------------------End Services Section-----------------------------
 
-// ----------------------Start Features Page-----------------------------
+// ----------------------Start Features Section-----------------------------
 #features-section {
   background-image: url("../img/computers.png");
 
@@ -273,7 +255,7 @@ body {
     padding-bottom: 25%;
   }
 }
-// ----------------------End Features Page-----------------------------
+// ----------------------End Features Section-----------------------------
 
 // ----------------------Start Prices Section-----------------------------
 #prices {
@@ -292,6 +274,7 @@ body {
     text-shadow: 0.1vh 0.1vh 0.4vh;
   }
   table {
+    border: $primary-color-light solid 0.5vh;
     .first-th {
       background-color: #9aa0a5;
       color: white;
@@ -309,7 +292,7 @@ body {
       background-color: #e0dede;
     }
     .first-table-btn {
-      border: 1px solid black;
+      border: 0.2vh solid black;
       &:hover {
         background-color: white;
       }
@@ -327,7 +310,7 @@ body {
     }
     .second-table-btn {
       background-color: $primary-color-dark;
-      border: 1px solid $primary-color-dark;
+      border: 0.2vh solid $primary-color-dark;
       color: white;
       &:hover {
         background-color: white;
@@ -336,7 +319,7 @@ body {
     }
   }
 }
-// ----------------------End Section-----------------------------
+// ----------------------End Prices Section-----------------------------
 
 // ----------------------Start Testimonial Section----------------------------
 #testimonial-section {
@@ -462,6 +445,7 @@ body {
 }
 
 // ----------------------End Contact Section-----------------------------
+// ----------------------Start Form Section-----------------------------
 
 footer {
   padding: 1% 0;
@@ -476,5 +460,6 @@ footer {
     }
   }
 }
+// ----------------------End Form Section-----------------------------
 
 @import "_mobile";
