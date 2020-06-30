@@ -12,9 +12,13 @@
     #contact-box {
       padding: 1%;
     }
-    // .site-title {
-    //   font-size: 6vh !important;
-    // }
+    .site-desc {
+      font-size: 5vh !important;
+    }
+
+    .site-title {
+      font-size: 8vh !important;
+    }
 
     .app-buttons {
       display: grid;
@@ -128,9 +132,9 @@
         width: 22vh !important;
       }
     }
-    // .site-title {
-    //   font-size: 1.9vh !important;
-    // }
+    .site-title {
+      font-size: 5vh !important;
+    }
     .btn-android {
       width: 100% !important;
       margin-left: 0 !important;
@@ -138,6 +142,9 @@
     .btn-apple {
       width: 100% !important;
       margin-left: 0 !important;
+    }
+    .img-mobile {
+      margin-bottom: 55%;
     }
   }
   #site-services {
